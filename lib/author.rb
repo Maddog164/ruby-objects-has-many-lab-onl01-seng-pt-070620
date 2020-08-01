@@ -7,6 +7,7 @@ class Author
 
   def initialize(name)
     @name = name
+    @@post_count+= 1
   end
 
   def posts
@@ -31,6 +32,5 @@ class Author
     #binding.pry
     @@post_count
   end
-
 
 end
