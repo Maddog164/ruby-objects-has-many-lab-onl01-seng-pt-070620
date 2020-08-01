@@ -8,6 +8,11 @@ class Post
   def initialize
     @title = title
     @author = author
+    save
+  end
+
+  def save
+    @@all << self
   end
 
   def posts
