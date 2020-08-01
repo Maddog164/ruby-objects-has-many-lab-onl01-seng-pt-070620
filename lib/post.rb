@@ -1,11 +1,10 @@
-
 class Post
 
   attr_accessor :title, :author
 
   @@all = []
 
-  def initialize
+  def initialize(title)
     @title = title
     @author = author
     save
@@ -15,9 +14,8 @@ class Post
     @@all << self
   end
 
-  def posts
-    Post.all.select {|post| post.author == self}
-    #binding.pry
+  def self.all
+    @@all
   end
-
+  
 end
