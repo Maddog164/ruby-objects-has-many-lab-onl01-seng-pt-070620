@@ -30,6 +30,6 @@ class Author
     #binding.pry
     @@post_count
   end
-    
+
 
 end
